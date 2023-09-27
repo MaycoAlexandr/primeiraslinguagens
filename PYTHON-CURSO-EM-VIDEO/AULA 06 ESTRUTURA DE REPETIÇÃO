@@ -1,0 +1,4 @@
+#Para estruturas de repetição usamos for 'x' in range(primeira repetição, ultima repetição, alternancia)
+for c in range(0, 40, 2):
+    print(c)
+print('fim ')
