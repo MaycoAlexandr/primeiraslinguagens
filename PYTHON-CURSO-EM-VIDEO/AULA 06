@@ -1,0 +1,7 @@
+print('Diga os valores a serem somados em forma de números inteiros')
+n1 = int(input('Digite o primeiro valor a ser somado: '))
+n2 = int(input('Digite o segundo valor a ser somado: '))
+n3 = int(input('Digite o terceiro valor a ser somado: '))
+s = n1 + n2 + n3
+# print ('A soma entre', n1, 'e', n2,'e',n3,'vale',s)
+print('A soma entre \033[1;0;41m{}\033[m, \033[4;31;42m{}\033[m e \033[4;32;43m{}\033[m vale \033[1;33;47m{}\033[m'.format(n1, n2, n3, s))
