@@ -1,0 +1,8 @@
+soma = 0
+for c in range(1, 7):
+    valor= int(input('Diga um valor para nossa soma de pares:'))
+    if valor % 2 == 0:
+        soma= soma+valor
+print(f'A soma de todos os pares informados vale {soma}.')
+
+

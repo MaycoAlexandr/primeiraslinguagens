@@ -1,0 +1,17 @@
+valor = float(input('Diga quanto custa o produto: '))
+pag = int(input(f'''Diga qual a forma de pagamento escolhida:
+\033[32m{1} para dinheiro ou cheque;
+\033[33m{2} para cartão a vista;
+\033[34m{3} para 2x no cartão;
+\033[31m{4} para 3x ou mais\033[m.
+'''))
+if pag == 1:
+    print(f'O valor final será de {valor-valor*0.1} ')
+if pag == 2:
+    print(f'O valor final será de {valor-valor*0.05}')
+if pag == 3:
+    print(f'Ovalor final será de {valor}')
+if pag == 4:
+    print(f'O valor final será de {valor+valor*0.2}')
+if 4 < pag  or pag < 1:
+    print(f'Está não é uma das opcões, por favor tente novamente.')

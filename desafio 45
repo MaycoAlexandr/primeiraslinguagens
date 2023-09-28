@@ -1,0 +1,17 @@
+import random
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = random.randint(0, 2)
+jogada = int(input(f'''Vamos jogar jokênpo, escolha a sua jogada:
+\033[31m{0}\033[m para escolher pedra; 
+\033[32m{1}\033[m para escolher papel;
+\033[33m{2}\033[m para escolher tesoura.
+'''))
+if computador==jogada:
+    print(f'Foi empate. O computador escolheu {itens[computador]}')
+if computador==0 and jogada==1 or computador==1 and jogada==2 or computador==2 and jogada==0:
+    print(f'Você ganhou! O computador escolheu {itens[computador]}')
+if computador==1 and jogada==0 or computador==2 and jogada==1 or computador==0 and jogada==2:
+    print(f'Você perdeu, hahaha! O computador escolheu {itens[computador]}')
+if 2< jogada or jogada <0:
+     print('Opção inválida, tente novamente.')
+

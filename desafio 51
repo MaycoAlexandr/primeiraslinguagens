@@ -1,0 +1,7 @@
+num = int(input('Diga qual é o número inicial da PA: '))
+razão = int(input('Diga a razão da progreção: '))
+decimo = num+1 + (10-1) * razão
+print('='*20, end=' ')
+for c in range (num, decimo, razão):
+    print(f'{c}', end='->')
+print('='*20)

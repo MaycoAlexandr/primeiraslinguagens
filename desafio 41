@@ -1,0 +1,14 @@
+from datetime import date
+ano = int(input('Diga o ano em que o competidor nasceu: '))
+hoje = date.today().year
+idade = hoje-ano
+if idade < 9:
+    print('Está na categoria Mirim.')
+if 9 < idade < 14:
+    print('Está na categoria Infantil.')
+if 14 < idade < 19:
+    print('Está na categoria Júnior.')
+if 19 < idade <= 20:
+    print('Está na categoria Senior.')
+if idade > 20:
+    print('Está na categoria Master.')

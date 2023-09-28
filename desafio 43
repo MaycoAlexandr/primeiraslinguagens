@@ -1,0 +1,13 @@
+peso = float(input('Diga qual é seu peso com gramas após um ponto: '))
+altura = float(input('Diga qual é sua altura em metros, com centimetros após um ponto : '))
+imc = peso/altura**2
+if imc < 18.5:
+    print('Você está abaixo do peso.')
+if 18.5 <= imc < 25:
+    print('Você está com o peso adequado.')
+if 25 <= imc < 30:
+    print('Você está em sobrepeso.')
+if 30 <=imc <= 40:
+    print('Você está no grau de obesidade, tome cuidado.')
+if imc > 40:
+    print('Você está em obesidade morbida, faça alguma coisa!')
