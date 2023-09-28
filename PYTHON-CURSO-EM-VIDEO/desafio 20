@@ -1,0 +1,9 @@
+from random import shuffle
+print('Vamos decidir a ordem dos nomes citados na lista')
+n1 =input('Diga o nome de um participante: ')
+n2= input('Diga mais outro: ')
+n3= input('Diga mais outro: ')
+n4= input('Diga mais outro: ')
+lista = [n1, n2, n3, n4]
+shuffle(lista)
+print(f'A ordem decida dentre os citados foi ',(lista))

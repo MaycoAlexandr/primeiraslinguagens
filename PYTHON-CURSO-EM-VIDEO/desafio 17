@@ -1,0 +1,9 @@
+import math
+print('Vamos descobrir quanto vale a hipotenusa do seu triangulo retangulo.')
+num= float(input('Diga qual é o cateto oposto do triangulo retangulo: '))
+num2= float(input('Diga qual é o cateto adjacente do triangulo retangulo: '))
+s2= math.pow(num,2)
+c2=math.pow(num2,2)
+h=(c2+s2)**0.5
+
+print(f'Com os catetos desse valor seu hipotenusa será de \033[1;35;43m{h:,.2f}\033[m')

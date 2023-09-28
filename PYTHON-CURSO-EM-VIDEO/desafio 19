@@ -1,0 +1,10 @@
+# a biblioteca random gera numeros aleatorios
+from random import choice
+print('Vamos sortear um nome de uma lista com o random')
+n1= input('Diga o nome do primeiro candidato: ')
+n2= input('Diga o nome do segundo candidato: ')
+n3=input('Diga o nome do terceiro candidato: ')
+n4=input('Diga o nome do quarto candidato: ')
+sorteio= [n1,n2,n3,n4]
+escolhido= choice(sorteio)
+print(f'O escolhido foi \033[1;32m{escolhido}')

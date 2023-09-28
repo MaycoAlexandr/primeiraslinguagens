@@ -1,0 +1,6 @@
+import math
+print('Vamos ver quais são os cosseno e seno do angulo escolhido.')
+ang= math.radians(float(input('Diga qual é o angulo escolhido: ')))
+coss= math.cos(ang)
+sen= math.sin(ang)
+print(f'O cosseno de \033[33m{ang}\033[m vale \033[1;35m{coss:,.2f}\033[m e o seno vale \033[31;46m{sen:,.2f}\033[m')

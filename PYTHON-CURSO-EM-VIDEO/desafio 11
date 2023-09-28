@@ -1,0 +1,4 @@
+print('Vamos ver quantos litros de tinta você precisa para pintar sua parede')
+n = float(input('Diga qual é a altura da parede em metros: '))
+n2 = float(input('Diga qual é a largura da parede em metros: '))
+print(f'Você vai precisar de \033[01;33;40m{n*n2*2}\033[m litros de tinta')

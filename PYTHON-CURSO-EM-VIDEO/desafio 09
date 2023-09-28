@@ -1,0 +1,3 @@
+print('Vamos ver a tabuada de um número ')
+n = int(input('Diga o número escolhido: '))
+print(f'Sua tabuada da multiplicação de 1 a 10 respectivamente é \033[1;33m{n*1},{n*2}, {n*3}, {n*4}, {n*5}, {n*6}, {n*7}, {n*8}, {n*9} e {n*10}\033[m ')
