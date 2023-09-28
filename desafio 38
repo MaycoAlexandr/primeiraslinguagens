@@ -1,0 +1,8 @@
+num= float(input('Diga o primeiro valor: '))
+num2=float(input('Diga um outro valor: '))
+if num>num2:
+    print('Seu primeiro valor é o maior.')
+if num<num2:
+     print('Seu segundo valor é o maior.')
+if num==num2:
+    print('Seus valores são os mesmos.')

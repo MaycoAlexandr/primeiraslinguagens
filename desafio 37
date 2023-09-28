@@ -1,0 +1,15 @@
+#para colocar várias linhas no print use três aspas '''
+# para converção de binario, octal e hexadecimal use respectivamente bin(num), octal(num) e hex(num)
+num= int(input('Diga o número inteiro que deseja converter: '))
+print(f'''Digite \033[31m{1}\033[m para binária;
+Digite \033[32m{2}\033[m para octal;
+Digite \033[33m{3}\033[m para hexadecimal.''')
+conver=int(input('Diga qual a opção que deseja:'))
+if conver == 1:
+    print(f'{num} em binário é {bin(num)[2:]}')
+if conver ==2:
+    print(f'{num} em octal vale {oct(num)[2:]}')
+if conver ==3:
+    print(f'{num} em hexadecimal vale {hex(num)[2:]}')
+if conver >3 or conver<1:
+    print('Opção inválida, por favor tente outra vez. ')

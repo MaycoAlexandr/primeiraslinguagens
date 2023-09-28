@@ -1,0 +1,8 @@
+salario=float(input('Diga quanto gannha: '))
+casa=float(input('Diga o valor da casa: '))
+tempo=int(input('diga em quantos anos você vai pagar a casa:'))
+prestação= casa/(tempo*12)
+if prestação >=salario*0.3:
+    print('Infelizmente você não pode financiar essa casa.')
+else:
+    print(f'Você pode pagar a casa com prestações de {prestação:,.2f} por mês')

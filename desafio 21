@@ -1,0 +1,7 @@
+# carai man bora meter um audio nessa bagaça
+import pygame
+pygame.init()
+pygame.mixer.music.load('musga.mp3')
+pygame.mixer.music.play()
+input()
+pygame.event.wait()

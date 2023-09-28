@@ -1,0 +1,6 @@
+print('Vamos ver se você levou multa')
+velocidade=int(input('Diga a quantos km/h você estava andando: '))
+if velocidade >= 80:
+    print(f'Voce foi multado em {(velocidade-80)*7:,.2f} reais')
+else:
+    print('Você está dentro da velocidade.')

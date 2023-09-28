@@ -1,0 +1,11 @@
+('-='*20)
+print('Analizador de triangulos')
+('-='*20)
+r1=int(input('Diga o tamanho da primeira reta em valor interio: '))
+r2=int(input('Diga o tamanho da segunda reta em valor interio: '))
+r3=int(input('Diga o tamanho da terceira reta em valor interio: '))
+if r1<r2+r3 and r2<r1+r3 and r3<r1+r2:
+    print('Podemos formar um triangulo')
+else:
+    print('Não podemos formar um triangulo')
+

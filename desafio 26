@@ -1,0 +1,5 @@
+frase=input('Diga uma frase e vamos ver quantas e em quais casas as teclas "a" aparecem: ').strip().upper()
+n=frase.count('A')
+primeira=frase.find('A')+1
+ult=frase.rfind('A')+1
+print(f'A letra "a" aparece {n} vezes na sua frase, sendo a primeira na posição {primeira} e a ultima na posição {ult}')

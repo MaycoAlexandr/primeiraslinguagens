@@ -1,0 +1,3 @@
+nome=input('Diga seu nome: ').strip().title().split()
+print(f'Muito prazer {nome[0]}, seu ultimo nome é {nome[len(nome)-1]}')
+

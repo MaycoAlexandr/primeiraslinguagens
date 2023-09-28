@@ -1,0 +1,6 @@
+print('Vamos ver se o valor que escolheu é impar ou par')
+num=int(input('Escolha um valor interiro: '))
+if num%2==0:
+    print('Seu valor é par')
+else:
+    print('Seu valor é impar')

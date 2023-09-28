@@ -1,0 +1,9 @@
+# datetime é uma biblioteca de tempo real
+from datetime import date
+nasci=int(input('Diga em que ano você nasceu: '))
+hoje= date.today().year
+idade=(hoje-nasci)
+if idade>18:
+    print(f'Você tem {idade} anos, já não está mais na idade, que seria {idade-18} anos atrás.')
+if idade<18:
+    print(f'Com apenas {idade} anos você ainda não tem idade para se alistar, ainda faltam {18-idade} anos')

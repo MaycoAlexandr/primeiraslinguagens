@@ -1,0 +1,2 @@
+n=(input('Digite um valor de 0 a 9999 e direi qual é o digito de cada casa de medida: '))
+print(f'A unidade de milhão vale  {n[0]}, a de cenetena {n[1]}, a de dezena {n[2]} e a de unidade {n[3]}')

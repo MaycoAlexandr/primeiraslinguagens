@@ -1,0 +1,7 @@
+print('Vamos ver quanto irá te custar uma passagem')
+dist=int(input('Diga quantos quilometros você vai precisar andar até chegar onde quer: '))
+if dist<=200:
+    custo=dist*0.5
+else:
+    custo=dist*0.45
+print(f'Sua viagem vai custar {custo:,.2f} reais')

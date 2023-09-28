@@ -1,0 +1,9 @@
+import random
+print('Vamos ver se voce adivinha o numero que eu escolhi entre 0 e 5')
+numero=random.randint(0,5)
+dito=(int(input('Diga o teu palpite: ')))
+if numero == dito:
+    print('Incrível, você acertou!')
+else :
+    print('Ha ha, você errou.')
+print(f'O número escolhido foi {numero}')
