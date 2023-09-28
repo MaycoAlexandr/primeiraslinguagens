@@ -1,0 +1,15 @@
+#parece existir uma ordem de igualdade onde peso=pesado e diferente de pesado=peso
+pesado = 0
+leve = 0
+for c in range (1, 6):
+    peso = float(input(f'Diga o peso da {c}° pessoa: '))
+    if c == 1:
+        pesado = peso
+        leve = peso
+    else:
+        if pesado < peso:
+            pesado=peso
+        if leve > peso:
+            leve=peso
+print(f'O mais leve pesa {leve}kg e o mais pesado pesa {pesado}kg.')
+

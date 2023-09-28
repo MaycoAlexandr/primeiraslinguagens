@@ -1,0 +1,20 @@
+# Ao usar um contador o nomeie e jogue-o dentro do laço com o mesmo nome: cont= 0
+#for c in range(0, 7):
+#  ano = int(input('Diga qual é o ano de nascimento do candidato: '))
+#     idade = atual - ano
+#     if idade >= 18:
+#         cont +=1
+from datetime import date
+cont= 0
+contmenor=0
+atual = date.today().year
+for c in range(0, 7):
+    ano = int(input('Diga qual é o ano de nascimento do candidato: '))
+    idade = atual - ano
+    if idade >= 18:
+        cont +=1
+        print(f'A idade dessa pessoa é {idade}, ela é de maior')
+    else:
+        contmenor += 1
+        print(f'A idade dessa pessoa é {idade}, ela é menor')
+print(f'Nós temos o total de {cont} candidatos de maior idade e {contmenor} de menores.')

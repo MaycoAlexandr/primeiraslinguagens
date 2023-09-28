@@ -1,0 +1,12 @@
+import random
+tentativas = 0
+n = random. randint(0, 10)
+n1 = int(input('Vamos jogar a advinhação! diga qual número de 0 a 10 que o computador escolheu: '))
+while n1 != n:
+    if n1 > n:
+        print('Menos...')
+    if n1 < n:
+            print('Mais...')
+    n1 = int(input('Vocè errou haha, tente de novo: '))
+    tentativas += 1
+print(f'Acertou! Depois de {tentativas} tentativas ,o número sorteado foi {n}')

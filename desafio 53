@@ -1,0 +1,11 @@
+frase = str(input('Diga um frase e veremos se ela forma um palíndromo: ')).strip().upper()
+pala = frase.split()
+junto = ''.join(pala)
+inverso = ''
+for letra in range(len(junto)-1, -1, -1):
+    inverso += junto[letra]
+print(junto, inverso)
+if junto == inverso:
+    print('Como pode ver, podemos formar um palindromo.')
+else:
+    print('Como pode ver, não podemos formar um palindromo.')

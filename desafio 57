@@ -1,0 +1,4 @@
+s = str(input('Diga qual é seu sexo entre [M/F]:')).strip().upper()
+while s not in 'MF':
+    print(str(input('Sua resposta é inválida, digite M, para masculino, ou F, para feminino'))).strip().upper()
+print(f'Sexo {s} cadastrado com sucesso.')

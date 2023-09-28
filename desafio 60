@@ -1,0 +1,11 @@
+from math import factorial
+print('Vamos fazer uma calculadora fatorial.')
+n = int(input('Diga um número inteiro: '))
+c = n
+while c >= 1:
+    print(f'{c}x'if c > 1 else f'{c}=', end=' ')
+    c -= 1
+f = factorial(n)
+print(f'A fatorial de \033[32m{n}\033[m vale \033[31m{f}\033[m')
+
+
