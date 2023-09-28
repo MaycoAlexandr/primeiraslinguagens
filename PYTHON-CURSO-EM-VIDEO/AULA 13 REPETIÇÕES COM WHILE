@@ -1,0 +1,8 @@
+'''for c in range (1, 10):
+        print(c)
+    print('Acabou')''' 'Esse era o caso de repetição por for c in range'
+c=1 #(sendo c o valor no qual se começa a repetição no caso de while) ( o símbolo usado para diferença é !=)
+while c < 10:
+    print(c)
+    c +=1
+print('Acabou')

@@ -1,0 +1,11 @@
+# elif=simplificação de else+if PORÉM esse termo não está funcionando a partir do segundo elif, use os if's
+nome=str(input('Diga qual é o seu nome: ')).title().strip()
+if nome == 'Mayco':
+    print('Eai Maycola!')
+if ('w', 'k' in nome):
+    print('Seu nome é bem diferente!')
+if nome == 'Maria' or 'João' or 'Paulo' or 'Pedro':
+    print('Seu nome é bem comum no Brasil')
+if nome in 'Ana, Jessica, Carla, Fernanda, Carolina':
+    print('Belo nome feminino!')
+print(f'Tenha um bom dia, \033[33m{nome}\033[m!')

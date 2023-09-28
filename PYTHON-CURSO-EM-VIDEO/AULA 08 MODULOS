@@ -1,0 +1,8 @@
+#import random= escolhi categorias de coisas sorteadas
+#import math= importa operações matemáticas
+#impor emoji= importa emojis
+#import playgame= importa arquivos de mídia
+#import time= ajuda a cronometrar os comandos
+#import datetime= ajuda a usar o tempo atual
+import emoji
+print(emoji.emojize("Olá mundo :smiling_face_with_sunglasses:"))

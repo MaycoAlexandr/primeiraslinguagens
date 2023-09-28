@@ -1,0 +1,4 @@
+#temos a seguinde estrutura para mudança de cor ex:\033[0;33;44m (veja o print salvo)
+a=float(input('Diga um valor em vermelho'))
+b=float(input('Diga um valor em amarelo'))
+print(f'Seus valores são \033[0;41m{a}\033[m e \033[33;44m{b}\033[m')

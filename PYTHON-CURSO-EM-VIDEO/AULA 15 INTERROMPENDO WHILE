@@ -1,0 +1,10 @@
+# o comando break serve para pausar repetições while como uma placa de pare.
+# para centraliazar ou alinhar a direita e esquerda use (' {x:complemento^número de casas}') ou (' {x:complemento<número de casas}'), (' {x:complemento>número de casas}')
+cont = 0
+s= n = 0
+while n != 10:
+    n = int(input('Diga um número: '))
+    if n == 10:
+        break
+    s += n
+print(f'A soma vale {s:-^20}')

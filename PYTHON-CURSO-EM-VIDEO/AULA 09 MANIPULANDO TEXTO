@@ -1,0 +1,20 @@
+# vamos esprementar umas manipulações de texto
+#print(frase[5]) mostra apenas o item escolhido
+#frase.replace=modificação de troca
+#frase[x:x] vale  para seleção de casas a serem mostradas, sendo o primeiro x a primeira casa antes do início da frase e o outro x sendo a a casa depois da ultima letra a ser exibida
+#frase[x:x:x] vale para saber a quantidade de letras pular ao mostrar o texto
+#frase.replace('x', 'y')= modifica a palavra por outra
+#frase.count('a',0,10)= conta as ocorrencias num espaço escolhido
+#frase.find= diz a posição do termo escolhido
+#frase.strip()= retirar os espaçoes de antes e depois, com rstrip para retirar os da direita e lstrip para retirar os da esquerda
+#print('x' in frase) = demostrar se o termo x está dentro da frase
+#frase.split()= coloca os termos separados em forma de lista com o item usado para separar dentro dos parenteses
+#frase.title()= consegue deixar todas as palavras com inicial maiuscula
+#'-'.join(frase)= junta as palavras com o termo entre aspas
+#len(frase)= usada para contar a quantidade de termos na frase
+
+nome_completo = input("Digite o seu nome completo: ")
+primeiro_nome = nome_completo.split()[0]
+quantidade_letras = len(primeiro_nome)
+
+print("O primeiro nome tem", quantidade_letras, "letras.")
