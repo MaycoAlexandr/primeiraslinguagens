@@ -1,0 +1,26 @@
+# DICIONARIOS são variaveis compostas com objetos identificados uns por outros
+# filme.values() = me entrega os valores das chaves no dicionario, já filme.keys() me mostra as chaves que receberam os valores
+#filme.items() = vai mostra todas as cheves e valores.
+#ex:
+filme = {'título': 'Star wars', 'ano': '1977', 'diretor': 'George Lucas' }
+#for k, v in filme.items():
+#    print(f'O {k} é o {v}')
+# parece q podemos juntar dicionarios dentro de listas
+locadora = []
+filme2 = {'título': 'Avenges', 'ano': '2012','diretor': 'Joss Whedon' }
+locadora.append(filme)
+locadora.append(filme2)
+print(locadora[0]['diretor'])
+# DICIONARIOS são variaveis compostas com objetos identificados uns por outros
+# filme.values() = me entrega os valores das chaves no dicionario, já filme.keys() me mostra as chaves que receberam os valores
+#filme.items() = vai mostra todas as cheves e valores.
+#ex:
+filme = {'título': 'Star wars', 'ano': '1977', 'diretor': 'George Lucas' }
+#for k, v in filme.items():
+#    print(f'O {k} é o {v}')
+# parece q podemos juntar dicionarios dentro de listas
+locadora = []
+filme2 = {'título': 'Avenges', 'ano': '2012','diretor': 'Joss Whedon' }
+locadora.append(filme)
+locadora.append(filme2)
+print(locadora[0]['diretor'])

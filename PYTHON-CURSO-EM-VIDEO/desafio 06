@@ -1,0 +1,4 @@
+print('Veremos qual é o dobro, triplo e a raiz quadrada\n de um número')
+n = float(input('Diga, qual será o valor escolhido?'))
+print(f'Seu valor dobrado é \033[1;33;46m{n*n}\033[m, seu triplo vale \033[1;35;47m{n*n*n} e sua raiz vale {n**(1/2):,.2f}')
+# Para colocar a quantidade de casas decimais use {x:,.2f}

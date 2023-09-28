@@ -1,0 +1,16 @@
+# AS LISTAS ESTÃO ENTRE [], DIFERENTE DAS TUPLAS ()
+# o nome das casas dos fatores na lista é chave;
+# lista= ['x','x','x','x']
+# lista.append('y') adiciona y no fim da lista
+#lista.insert(0,'y') adiciona y no início da lista
+# del lista[5] = exclui o item na posição 5 da lista, lista.pop(5) também ou lista .pop() removerá o ultimo item e lista.remove('y') removeria nosso primeiro y.
+# EM CASOS DE ADICIONAR OU REMOVER UM ITEM DA LISTA OS OUTROS ASSUMEM SUAS POSIÇÕES INETERRUPTAS.
+# Podemos declarar uma lista com x= list(range(4,11))
+# lista.sort(), organiza os valores da lista de forma crescente, lista.sort(reverse=True), organiza de tráz pra frente
+n = [1, 2, 3, 4]
+# quando igualamos uma lista a outra elas formam uma ligação e não mudam
+# já para copiar use c = n[:] (fatiamento completo), nesse caso podemos alterar uma sem mudar a outra
+c = n[:]
+n.insert(2, 10)
+print(f'A lista n vale {n}')
+print(f'A lista c vale {c}')

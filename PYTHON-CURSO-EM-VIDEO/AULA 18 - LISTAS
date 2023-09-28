@@ -1,0 +1,16 @@
+grupo = []
+pessoas = []
+total40 = total39 = 0
+for p in range(0, 3):
+    pessoas.append(input('Nome da pessoa: '))
+    pessoas.append(int(input('idade da pessoa: ')))
+    grupo.append(pessoas[:])
+    pessoas.clear()
+for c in grupo:
+    if c[1] >= 40:
+        print(f'\033[31m{c[0]}\033[m tem mais de 40 anos.')
+        total40 += 1
+    else:
+        print(f'\033[34m{c[0]}\033[m tem menos de 40 anos.')
+        total39 += 1
+print(f'Temos \033[31m{total40}\033[m pessoas maiores de 40 e \033[32m{total39}\033[m')
