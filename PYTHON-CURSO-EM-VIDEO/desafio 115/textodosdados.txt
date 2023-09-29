@@ -1,0 +1,3 @@
+Mayco;20
+Ana;20
+carlos;40
