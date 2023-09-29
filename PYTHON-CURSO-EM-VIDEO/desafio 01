@@ -1,0 +1,3 @@
+print("opa")
+name=input('Opa boa noite camarada, diga seu nome: ')
+print('Seja bem',name,', esse é o ínicio de tudo!')

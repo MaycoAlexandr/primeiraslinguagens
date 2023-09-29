@@ -1,0 +1,11 @@
+import urllib
+#aparentemente mexe com sites
+try:
+    site = request.urlopen('http://www.pudim.com.br')
+#Em particular, request.urlopen é usado para abrir uma URL e obter seu conteúdo
+except urllib.error.URLError:
+    print(f'O site pudim não está acessível ainda.')
+else:
+    print('O site está acessível para você.')
+    print(site.read())
+# o comando .read() pode nos mostras a estrutura html do site.

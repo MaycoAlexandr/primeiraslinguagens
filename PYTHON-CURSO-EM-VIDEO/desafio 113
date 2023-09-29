@@ -1,0 +1,31 @@
+def leiaint(msg):
+    while True:
+        try:
+            n = int(input(msg))
+        except (ValueError, TypeError):
+            print(f'\033[33m{"ERRO. por favor tente novamente."}\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print(f'\033[33m{"ERRO. Sem dados."}\033[m')
+            return 0
+        else:
+            return n
+
+
+def leiafloat(msg):
+    while True:
+        try:
+            n = float(input(msg))
+        except (ValueError, TypeError):
+            print('ERRO. Valor invalido, tente novamente. ')
+            continue
+        else:
+            return n
+
+
+m = leiaint('Digite um número inteiro: ')
+n = leiafloat('Digite um numero qualquer: ')
+print(f'O numero que você digitou foi {m}, o numero qualquer que você digitou foi {n}')
+
+
+
