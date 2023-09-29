@@ -1,0 +1,23 @@
+def factorial(n, show=False):
+    '''
+
+    :param n:Valor a se fazer factorial
+    :param show: Termo condicional
+    :return: retorna o resultado de factorial
+    '''
+    fac = 1
+    for c in range(n, 0, -1):
+        if show:
+            print(f'{c}', end='')
+            if c > 1:
+                print(f'x', end = '')
+            else:
+                print(f'=', end='')
+
+        fac *= c
+
+    return fac
+
+
+print(factorial(5, show=True))
+help(factorial)

@@ -1,0 +1,22 @@
+print('=-'*20,'A MÉDIA GERAL','=-'*20)
+continuar = 'S'
+valores = 0
+maior = menor = media = total = n = 0
+while continuar in 'Ss':
+    n = int(input('Digite um valor: '))
+    total += n
+    valores += 1
+    continuar = input('Quer continuar? [S/N] para sim ou não: ').upper().strip()[0]
+    if valores == 1:
+        maior = menor = n
+    else:
+        if n > maior:
+            n = maior
+        if n < menor:
+            n = menor
+    while continuar not in 'SsNn':
+        continuar = input('Opção inválida, digite [S/N] para sim ou não: ').upper().strip()[0]
+
+media = total / valores
+print(f'O maior número digitado foi: {maior}, e o menor foi {menor}')
+print(f'A média dos valores que você digitou vale :{media}, tendo digitado {valores} valores.')

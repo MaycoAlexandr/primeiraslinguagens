@@ -1,0 +1,22 @@
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+s = c3 = maior = 0
+
+print(f'\033[33m{"Vamos criar uma matriz 3x3, V. 2":^50}\033[m')
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Diga o valor a ser adicionado na posição [{l, c}]: '))
+        if matriz[l][c] % 2 == 0:
+            s += matriz[l][c]
+        if c == 2:
+            c3 += matriz[l][c]
+        if l == 1:
+            if matriz[l][c] >= maior:
+                maior = matriz[l][c]
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[\033[34m{matriz[l][c]:^5}\033[m]', end=' ')
+    print()
+print('=*'*30)
+print(f'A soma dos valores pares é:{s} ')
+print(f'A soma dos valores da coluna 2 vale: {c3}')
+print(f'O valor mais alto da linha 1 é: {maior}')

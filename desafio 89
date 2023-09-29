@@ -1,0 +1,20 @@
+print(f'{"MÉDIA V. 2":^50}')
+dados = []
+continua = ''
+while True:
+    nome = str(input('Diga o nome do aluno:  '))
+    nota1 = float(input('Diga a primeira nota:'))
+    nota2 = float(input('Diga a segunda nota: '))
+    media = (nota1+nota2)/2
+    dados.append([nome, [nota1, nota2], media])
+    continua = (input('Quer continuar? S/N'))
+    if continua in 'Nn':
+        break
+    while continua not in 'NnSs':
+        continua = input('Opção ínvalida. Quer continuar? S/N')
+print('=-' * 30)
+print(f'{"N.":<4}{"Nome":<20}{"NOTA FINAL":>30}')
+print('=-' * 30)
+
+for idx, aluno in enumerate(dados):
+    print(f'{idx + 1:<4}{aluno[0]:<20}{aluno[2]:>30.2f}')

@@ -1,0 +1,15 @@
+performace = {}
+total = 0
+jogo = []
+performace['nome'] = input('Digite o nome do jogador: ')
+partidas = int(input('Quantas partidas foram feitas com ele?  '))
+for c in range(0, partidas):
+    jogo.append(int(input(f'Diga quantos gols foram feitos por {performace["nome"]} na {c+1}º partida: ')))
+performace['gols'] = jogo
+performace['total'] = sum(jogo)
+print('=*'*60)
+print(f'O jogador {performace["nome"]} , participou de  {partidas} partidas '
+      f'ficando com {performace["total"]} de gols no total.')
+for i, v in enumerate(performace['gols']):
+    print(f'Na partida {i+1}, fez {v} gols')
+

@@ -1,0 +1,8 @@
+dados = {}
+dados['nome'] = input('Nome do aluno: ')
+dados['media'] = float(input(f'Média de {"nome"}: '))
+if dados['media'] < 7:
+    dados["situaçao"] = 'Reprovado'
+else:
+    dados["situaçao"] = 'Aprovado'
+print(f'O {dados["nome"]}, que alcançou como média a nota {dados["media"]}, foi {dados["situaçao"]}')

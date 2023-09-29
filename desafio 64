@@ -1,0 +1,7 @@
+print('=-'*20,'Desafio dos 999','=-'*20)
+n = int(input('Diga um número inteiro: '))
+total = 0
+while n != 999:
+    total += n
+    n=int(input('Tente outra vez:'))
+print(f'Finalmente ! A soma dos valores que chutou deu \033[34m{total}\033[m')

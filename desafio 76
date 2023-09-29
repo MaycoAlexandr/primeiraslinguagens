@@ -1,0 +1,17 @@
+lista = ('Caderno', 21.99,
+         'Lapís', 2.00,
+         'Grafits', 5.00,
+         'Borracha', 1.50,
+         'Calculadora', 50.00,
+         'Régua', 15.00,
+         'Mochila', 80.00,
+         'Cola', 6.50)
+print('=-'*30)
+print(f'\033[33m{"Tabela de preços":^50}\033[m')
+print('=-'*30)
+for tabela in range(0, len(lista)):
+    if tabela % 2 ==0:
+        print(f'{lista[tabela]:=<30}', end='R$')
+    else:
+        print(f'{lista[tabela]:>5.2f}')
+print('-'*50)

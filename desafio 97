@@ -1,0 +1,8 @@
+def borda(t):
+    print('~'*len(t))
+    print(t)
+    print('~'*len(t))
+
+
+borda('Olá mundo')
+borda('Vamo nessa, tomara que funcione.')

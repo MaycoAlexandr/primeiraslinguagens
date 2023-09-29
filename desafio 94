@@ -1,0 +1,34 @@
+galera = []
+pessoa = {}
+soma = media = 0
+while True:
+    pessoa.clear()
+    pessoa['nome'] = input('Qual o nome da pessoa? ')
+    pessoa ['sexo'] = input('Sexo? [M/F]').upper()[0]
+    while pessoa['sexo'] not in 'MF':
+        pessoa['sexo'] = input('Por favor digite M para masculino ou F para feminino: ')
+    pessoa['idade'] = int(input('Qual é a idade? '))
+    soma += pessoa['idade']
+    galera.append(pessoa.copy())
+    continuar = input('Quer continuar? [S/N]').upper()[0]
+    while continuar not in 'SN':
+        continuar = input('Opção inválida. Tente novamente, S para sim ou N para não: ').upper()[0]
+    if continuar == 'N':
+        break
+print('=*'*60)
+print(f'Ao todo temos {len(pessoa)+1} pessoas;')
+media = soma / len(pessoa)+1
+print(f'A média de idade deles é de {media:.2f}anos')
+print(f'As mulheres na lista são:', end='')
+for c in galera:
+    if c['sexo'] == 'F':
+        print(f'{c["nome"]}', end='')
+    print()
+print(f'As pessoas que estão acima da média são:', end=' ')
+for i in galera:
+    if i['idade'] > media:
+        print('  ', end=' ')
+        for v, k in i.items():
+            print(f'{v} = {k}', end=', ')
+        print()
+print('<<ENCERRADO, VOLTE SEMPRE.')

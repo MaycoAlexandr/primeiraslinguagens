@@ -1,0 +1,16 @@
+import datetime
+dados = dict()
+dados['nome'] = input('Digite o nome do funcionario: ')
+dados['Ano de nascimento'] = int(input('Digite o ano de nascimento do funcionario: '))
+dados['CNTPS '] = int(input('Digite o CNTPS: '))
+#hoje = datetime.
+idade = 2023 - dados['Ano de nascimento']
+if dados['CNTPS '] != 0:
+    dados['Ano de contratação '] = int(input('Diga o ano de contratação da pessoa: '))
+    dados['Salario'] = float(input('Digite o antigo salario do funcionario: '))
+    tempoexp = 2023 - dados['Ano de contratação ']
+    print(f'Sua aposentadoria será para o ano de {(30 - tempoexp)+2023}, sua idade será de {idade+(30 - tempoexp)}  ')
+else:
+    print(f'A idade de {dados["nome"]} é de {idade} e irá demorar no mínimo 30 anos de carteira para se aposentar')
+print(f'A idade da pessoa é {idade}')
+

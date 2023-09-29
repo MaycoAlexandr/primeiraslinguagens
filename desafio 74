@@ -1,0 +1,9 @@
+# (max(x))= usado em tuplas para se obter o maior valor
+# (min(x))= usado em tuplas para se obter o menor valor
+from random import randint
+a = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+maior = menor = 0
+print(f'Os números sorteados foram: {a}')
+
+print(f'''O maior foi: \033[31m{max(a)}\033[m 
+O menor foi: \033[32m{min(a)}\033[m''')

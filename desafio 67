@@ -1,0 +1,14 @@
+import time
+print('='*10,'Programa da Tabuada de Positivos','='*10)
+c = 0
+while True:
+    n = int(input('Diga um número inteiro: '))
+    for c in range (1, 11):
+        if n < 0:
+            break
+        m = c * n
+        print(f'{n} x {c} = {m}')
+        print('='*20)
+    if n < 0:
+        break
+print('Fim da tabuada, volte sempre.')

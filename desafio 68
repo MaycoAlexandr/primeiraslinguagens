@@ -1,0 +1,31 @@
+import time
+from random import randint
+result = 0
+print('=-'*10,'Vamos jogar ÍMPAR OU PAR','=-'*10)
+while True:
+    nc = randint(0, 10)
+    escolha = input('Escolha entre ímpar ou par [I/P]: ').strip().upper()
+    while escolha not in 'IP':
+        print('Escolha ínvalida, tente outra vez.')
+        escolha = input('Escolha entre ímpar ou par [I/P]: ').strip().upper()
+    jogada = int(input('Digite seu número: '))
+    result = jogada + nc
+    while escolha not in 'IP':
+        print('Escolha ínvalida, tente outra vez.')
+    if escolha in 'Ii':
+        if result % 2 == 0:
+            print('Voce perdeu, hahaha!')
+            print(f'O computador escolheu {nc} e vc {jogada}')
+            break
+        else:
+            print('Voce venceu...Vamos outra vez')
+    if escolha in 'Pp':
+        if result % 2 == 0:
+            print('Voce venceu...Vamos outra vez')
+        else:
+            print('Voce perdeu, hahaha!')
+            print(f'O computador escolheu {nc} e vc {jogada}')
+            break
+    print(f'O computador escolheu {nc} e vc {jogada}')
+    print('=-'*20)
+    time.sleep(2)

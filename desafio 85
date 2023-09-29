@@ -1,0 +1,10 @@
+lista = [[], []]
+for c in range(0,  7):
+    n = int(input(f'Diga o {c+1}º valor: '))
+    if n % 2 == 0:
+        lista[0].append(n)
+        lista[0].sort()
+    else:
+        lista[1].append(n)
+        lista[1].sort()
+print(f'Seus valores pares são \033[31m{lista[0]}\033[m já seus ímpares são \033[32m{lista[1]}\033[m')

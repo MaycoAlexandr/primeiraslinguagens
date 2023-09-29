@@ -1,0 +1,10 @@
+#os valores gerados usando a função sample() não se repetem na mesma chamada. A função sample()
+#é projetada para garantir que os elementos sejam únicos na lista de saída.
+#c = sample(range(ínicio do intervalo, fim do intervalo) quantidade de valores a se mostrar)
+# c = sample(range(1, 100)10)
+from random import sample
+num = int(input('How many times do you want to bet? '))
+for i in range(0, num):
+    print(f'Bet number {i+1}:', end=" ")
+    bet = sample(range(1, 61), 6)
+    print(sorted(bet))

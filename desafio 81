@@ -1,0 +1,20 @@
+lista = []
+c = 1
+while True:
+    n = int(input('Diga um número para adcionar a lista: '))
+    lista.append(n)
+    continuar = input('Quer continuar? S/N ')
+    if continuar in 'Nn':
+        break
+    while continuar not in 'SsNn':
+       continuar = input('Opção ínvalida. Quer continuar? S/N ')
+    c += 1
+if 5 in lista:
+    print('O valor 5 faz parte da tua lista!')
+else:
+    print('O valor 5 não faz parte da tua lista!')
+lista.sort(reverse=True)
+print(f'A lista em ordem decrescente é: {lista}')
+print(f'Sua lista tem {c} elementos.')
+print('=*='*30)
+

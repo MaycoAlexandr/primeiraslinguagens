@@ -1,0 +1,12 @@
+extenso = ('Zero','Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezesete', 'Dezoito', 'Dezenove', 'Vinte')
+n = int(input('Diga um número entre 0 e 20: '))
+while 20 < n or n < 0:
+         n = int(input('opção invalida. Diga um número entre 0 e 20: '))
+print(f'Você digitou o número {extenso[n]}')
+continuar = input('Voce que continuar?[S/N]')
+while continuar in 'Ss':
+    n = int(input('Diga um número entre 0 e 20: '))
+    if 20 < n or n < 0:
+        n = int(input('opção invalida. Diga um número entre 0 e 20: '))
+    print(f'Você digitou o número {extenso[n]}')
+    continuar = input('Voce que continuar?[S/N]')

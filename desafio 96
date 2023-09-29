@@ -1,0 +1,12 @@
+def area(h, l):
+    a = h * l
+    print(f'A área da sua parede com base nas informações vale {a} m².')
+
+
+print('='*60)
+print('Controle de área')
+print('='*60)
+c = float(input('Digite a altura da parede ou terreno: '))
+la = float(input('Digite a largura da parede ou terreno:'))
+area(c, la)
+

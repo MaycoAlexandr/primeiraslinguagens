@@ -1,0 +1,10 @@
+print('='*10,'JOGO DO 999','='*10)
+c = s = 0
+n = int(input('Diga um número interiro: '))
+while n != 999:
+    if n == 999:
+        break
+    c += 1
+    s += n
+    n = int(input('Diga um outro número interiro: '))
+print(f'Você tentou \033[32m{c}\033[m vezes e  a soma dos seus valore vale \033[31m{s}\033[m')

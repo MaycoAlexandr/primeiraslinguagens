@@ -1,0 +1,16 @@
+lista = []
+while True:
+    n = (int(input('Diga um número: ')))
+    if n not in lista:
+        lista.append(n)
+    cont = (input('Quer continuar? [S/N]'))
+    while cont not in 'SsNn':
+        print('Opção inválida, tente outra vez.')
+        cont = (input('Quer continuar? [S/N]'))
+    if cont in 'Nn':
+        break
+    if cont in 'Ss':
+        continue
+print('=-'*40)
+lista.sort()
+print(f'Sua lista será  \033[32m{lista}\033[m')

@@ -1,0 +1,21 @@
+from random import randint
+from time import sleep
+def sorteio(x):
+    for c in range(0, 5):
+        c += 1
+        n = randint(1, 10)
+        x.append(n)
+        print(f'{n}', end=' ', flush=True)
+        sleep(0.3)
+
+def somapar(lista):
+    soma = 0
+    for c in lista:
+        if c % 2 == 0:
+            soma += c
+    print(f' \nA soma dos seus pares vale: {soma}')
+
+
+numeros = []
+sorteio(numeros)
+somapar(numeros)

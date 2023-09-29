@@ -1,0 +1,36 @@
+print('=-'*10,'Lista de compras','=-'*10)
+itens = s = caro = menor = maior = 0
+barato = carao = ''
+while True:
+    produto = input('Digite o nome do produto: ')
+    pre = float(input('Digite o preço: '))
+    s += pre
+    if pre > 1000:
+        caro += 1
+    if itens == 0:
+        pre = maior
+        pre = menor
+        barato = produto
+        carao = produto
+    else:
+        if menor > pre:
+           pre = menor
+           barato = produto
+        if maior < pre:
+            pre = maior
+            carao = produto
+    mais = input('Quer continuar? [S/N]').upper().strip()
+    itens += 1
+    while mais not in 'SN':
+          print('opção ínvalida, tente outra vez')
+          mais = input('Quer continuar? [S/N]').upper().strip()
+    if mais in 'S':
+        continue
+    if mais in 'N':
+        break
+print('=-'*20)
+print(f'''O Total dessa compra deu \033[32mR${s:,.2f}\033[m,
+voce comprou \033[33m{itens}\033[m produtos e o mais barato foi \033[31m{barato}\033[m
+o mais caro foi  \033[32mR${carao}\033[m, além disso voce pegou \033[33m{caro}\033[m produtos
+custando mais de R$1000.00.
+''')

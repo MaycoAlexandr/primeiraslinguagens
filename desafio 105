@@ -1,0 +1,27 @@
+def notas(*n, sit=False):
+    '''
+    -> notas: foi feita para a análise básica de uma lista de notas pre-determinada de qualquer tamanho;
+    :param n: as notas dos alunos;
+    :param sit: fator opccional para mostrar a situação da turma ou não;
+    :return: para retornar cada nota dentro das informações do dicionario.
+    '''
+    d = dict()
+    d['soma'] = sum(n)
+    d['quant'] = len(n)
+    d['maior'] = max(n)
+    d['menor'] = min(n)
+    d['media'] = sum(n) / len(n)
+    if sit:
+        if d['media'] >= 7:
+            d['situação'] = 'BOA'
+        elif d['media'] >= 5:
+            d['situação'] = 'Razoável'
+        else:
+            d['situação'] = 'Ruim'
+
+    return d
+
+
+t = notas(9.5, 8, 4, 8, 10, sit=True)
+print(t)
+help(notas)

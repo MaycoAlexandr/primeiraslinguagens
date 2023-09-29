@@ -1,0 +1,26 @@
+def leiaint(msg):
+    '''return valor:
+    Após sair do loop, a função retorna o valor inteiro válido armazenado na variável 'valor' '''
+
+    '''ok (fator opcional):
+    A variável ok é usada para controlar se o valor lido da entrada do usuário é um número inteiro válido.
+    Inicialmente, ok é definido como False, o que significa que ainda não temos um número inteiro válido.
+    Se o usuário digitar um número inteiro válido, ok é definido como True, indicando que o valor é válido.'''
+    ok = False
+    valor = 0
+    while True:
+        n = (input(msg))
+        if n.isnumeric():
+            valor = (int(n))
+            ok = True
+            break
+        else:
+            print(f'\033[31m{"ERROR. Digite apenas números inteiros."}\033[m')
+    return valor
+
+
+n = leiaint('Digite um número inteiro: ')
+print(f'Voce digitou o número {n}')
+
+
+

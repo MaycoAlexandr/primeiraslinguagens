@@ -1,0 +1,25 @@
+print('=-'*10,'Cadastro de Pessoas','=-'*10)
+nome = (input('Diga o nome  da pessoa:')).title()
+idade = int(input('Diga a idade da pessoa: '))
+sexo = (input('Diga o sexo da pessoa, masculino ou feminino [F/M]: ')).strip().upper()
+continuar = (input('Quer continuar [Sim/Não]? ')).strip().upper()
+c = m = h = 0
+if idade >= 18:
+    c += 1
+if sexo == 'F' and idade <= 20:
+    m += 1
+if sexo == 'M':
+    h += 1
+while continuar in 'S':
+    nome = (input('Diga o nome  da pessoa:')).title()
+    idade = int(input('Diga a idade da pessoa: '))
+    sexo = (input('Diga o sexo da pessoa, masculino ou feminino [F/M]: ')).strip().upper()
+    continuar = (input('Quer continuar [Sim/Não]? ')).strip().upper()
+    if idade >= 18:
+        c += 1
+    if sexo == 'F' and idade <= 20:
+        m += 1
+    if sexo == 'M':
+        h += 1
+print(f'''Voce cadastrou {c} pessoa(s) maior(es) de 18 anos, {m} mulher(es) com menos de 20 e {h} homen(s). !''')
+

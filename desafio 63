@@ -1,0 +1,14 @@
+print('=-'*20,'Vamos ver a sequencia fibonati','=-'*20)
+v = 3
+c = 0
+c2 = 1
+n = int(input('Escolha quantos termos da sequencia mostrar: '))
+print(f'{c}->{c2}->', end='')
+while v <= n:
+    v += 1
+    c3 = c + c2
+    c = c2
+    c2 = c3
+    print(f'{c3}->', end='')
+print('Fim')
+

@@ -1,0 +1,10 @@
+primeiro = int(input('''Vamos ver a progreção dos 10 primeiros termos de uma PA.
+ Diga qual é o primeiro termo: '''))
+razao = int(input('Diga qual é a diferença entre um termo e o proxímo: '))
+c = 1
+termo = primeiro
+while c <= 10:
+    termo += razao
+    c += 1
+    print(f'{termo},fim'if c >10 else f'{termo}->',  end=' ')
+    

@@ -1,0 +1,14 @@
+pares = []
+impares = []
+while True:
+    n = int(input('Diga o valor que quer adicionar a lista: '))
+    if n % 2 == 0:
+        pares.append(n)
+    else:
+        impares.append(n)
+    continuar = input('Quer continuar? S/N')
+    while continuar not in 'SsnN':
+        continuar = input('Opção ínvalida. Quer continuar? S/N')
+    if continuar in 'Nn':
+        break
+print(f'Sua lista de pares vale {pares} e sua lista de impares vale {impares} ')
