@@ -1,0 +1,27 @@
+#permite definir uma classe que herda todos os metodos e propriedades de outra
+#classe Pai: classe base que está sendo hedada
+#classe filha: classe derivada 
+
+
+class Profissao:
+    def __init__(self, trabalho, sonho):
+        self.trabalho = trabalho
+        self.sonho = sonho
+    def pergunta(seu):
+        print('Por que trabalha como '+seu.trabalho )
+        print('Se seu sonho é ser '+seu.sonho)
+        
+
+eu = Profissao('auxiliar','Rico pra crl')
+eu.pergunta()
+
+#para criar uma classe que herda coloque a classe pai como parametro
+class Estudante(Profissao):
+    def __init__(self, trabalho, sonho, curso):
+        super().__init__( trabalho, sonho)
+        self.curso = curso
+    def orientação(self):
+        print( "Por que é ", self.trabalho, "se seu sonho é ser ", self.sonho," e cursa", self.curso)
+
+vocação = Estudante("auxiliar adm", "rico pra crl", "engenharia de produção")
+vocação.orientação()
