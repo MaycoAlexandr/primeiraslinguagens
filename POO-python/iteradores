@@ -1,0 +1,30 @@
+#iteradores são objetos com valores que podem ser atravessados, um iterador se refere tanto ao objeto que permite ao programador percorrer um container, (uma coleção de elementos) particularmente listas, quanto ao padrão de projetos Iterator, no qual um iterador é usado para percorrer um container e acessar seus elementos
+#Listas, tuplas, dicionários e conjuntos são todos objetos iteráveis
+# o metodo para obter o iterado é: iter() 
+'''farm = ('rice', 'bens', 'coffee', 'meat' )
+myplate = iter(farm)
+print(next(myplate))
+print(next(myplate))
+print(next(myplate))
+print(next(myplate))'''
+# strings também são iteraveis 
+class numeros:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+
+    def __next__(self):
+        if self.a <= 20:
+            x = self.a
+            self.a += 1
+            return x    
+        else:
+            raise StopIteration
+        
+
+classe = numeros()
+iterador  = iter(classe)
+
+for x in iterador:
+    print (x)

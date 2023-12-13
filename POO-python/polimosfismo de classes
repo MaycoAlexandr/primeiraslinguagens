@@ -1,0 +1,30 @@
+#O polimorfismo é frequentemente usado em métodos de classe, onde podemos ter múltiplas classes com o mesmo nome de método.
+#Por exemplo, digamos que temos três classes e todas elas têm um método chamado :CarBoatPlanemove()
+
+class Car:
+    def __init__ (self, brand, model):
+        self.brand = brand
+        self.model = model
+    def move (self):
+        print('Drive bith')
+
+class Boat:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+    def move (self):
+        print('Sail')
+    
+class Plane:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    def move (self):
+        print('Fly ! little boy')
+
+c1 = Car('Toyota', 'corolla')
+b1 = Boat('Faço nem ideia', 'Batboat')
+p1 = Plane('Boeing ', '747')
+
+for x in c1, b1, p1:
+    x.move()
