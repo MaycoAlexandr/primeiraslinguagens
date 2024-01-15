@@ -6,7 +6,7 @@ class Car:
         self.brand = brand
         self.model = model
     def move (self):
-        print('Drive bith')
+        print('Drive bitch')
 
 class Boat:
     def __init__(self,brand,model):

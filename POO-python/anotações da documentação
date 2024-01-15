@@ -1,0 +1,4 @@
+#Classes podem ser criadas por estados descritos por funções;
+#Python pode oferecer classes que herdam e classes ancestrais e suas classes tambem fazer parte da sua dinamica assim como os modulos, deve ser por isso que acho parecidos;
+# Tambem podemos esclarecer a estrutura de um objeto como no exemplo:
+#A propósito, utilizo a palavra atributo para qualquer nome depois de um ponto. Na expressão z.real, por exemplo, real é um atributo do objeto z. Estritamente falando, referências para nomes em módulos são atributos: na expressão modname.funcname, modname é um objeto módulo e funcname é um de seus atributos. Neste caso, existe um mapeamento direto entre os atributos de um módulo e os nomes globais definidos no módulos eles compartilham o mesmo espaço de nomes!
